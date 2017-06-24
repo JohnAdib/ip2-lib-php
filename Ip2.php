@@ -23,8 +23,9 @@
 		private $fh;
 		private $dbFilePath;
 		
-		public function __construct($dbFilePath = "ip2-cc.dat") {
-			$this->dbFilePath = $dbFilePath;
+		public function __construct($dbFilePath = null) {
+			$this->dbFilePath = $dbFilePath === null ? 
+				dirname(__FILE__)."/ip2-cc.dat" : $dbFilePath;
 			if(!file_exists($this->dbFilePath)) {
 				throw new \Exception("Ip2 database not found!");
 			}

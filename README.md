@@ -13,3 +13,23 @@ Fast IP to Country for PHP
     $country_code = $ip2->country('8.8.8.8');
     //$countryCode === 'US'
 ?>
+```
+
+##### Composer
+
+Add to the require object in your composer.json file:
+```
+"require": {
+    "ip2iq/ip2" : "1.0.0"
+}
+```
+
+```php
+<?php
+    require_once(dirname(__FILE__)."/vendor/autoload.php");
+    
+    $ip2 = new \ip2iq\Ip2();
+    $country_code = $ip2->country('8.8.8.8');
+    //$countryCode === 'US'
+?>
+```

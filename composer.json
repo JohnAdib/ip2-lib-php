@@ -1,0 +1,8 @@
+{
+	"name": "ip2iq/ip2",
+	"type": "library",
+	"description": "Fast IP to Country for PHP",
+	"keywords": ["geolocation","ip","country","location","ip2"],
+	"homepage": "https://github.com/ip2iq/ip2-lib-php",
+	"license": "Apache-2.0"
+}
